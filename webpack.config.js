@@ -50,7 +50,7 @@ module.exports = {
                 use: jsLoaders()
             },
             {
-                test: /\.s[ac]ss$/i,
+               test: /\.s[ac]ss$/i,
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
