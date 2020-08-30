@@ -1,7 +1,7 @@
 {
-  "name": "exel-app",
+  "name": "excel-app",
   "version": "1.0.0",
-  "description": "exel, pure js, oop",
+  "description": "excel, pure js, oop",
   "main": "index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production",
@@ -11,7 +11,8 @@
   "license": "ISC",
   "browserslist": "> 0.25%, not dead",
   "dependencies": {
-    "@babel/polyfill": "^7.10.4"
+    "@babel/polyfill": "^7.10.4",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",
