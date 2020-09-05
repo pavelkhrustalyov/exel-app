@@ -1,24 +1,22 @@
 import {ExcelComponent} from '@core/ExcelComponent';
 import {createTable} from '@/components/table/table.template';
+import {resizeLogic} from '@/components/table/resizeLogic';
 
 export class Table extends ExcelComponent {
   static className = 'excel__table';
   constructor($root) {
     super($root, {
       name: 'Table',
-      listeners: ['input'],
+      listeners: ['mousedown'],
     });
   }
-
-  onInput(event) {
-    console.log('onInput table ', event.target.textContent.trim());
-  }
-
-  onClick(event) {
-    console.log('onClick');
+  onMousedown(event) {
+    if (event.target.dataset.resize) {
+      resizeLogic(this.$root, event);
+    }
   }
 
   toHTML() {
-    return createTable(40);
+    return createTable(20);
   }
 }
