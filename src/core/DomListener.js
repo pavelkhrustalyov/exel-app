@@ -2,6 +2,8 @@ import {capitalize} from '@core/utils';
 
 export class DomListener {
   constructor($root, listeners = []) {
+    console.log(this);
+
     if (!$root) {
       throw new Error('No $root provided for DomListener!');
     }

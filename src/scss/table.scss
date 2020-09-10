@@ -48,6 +48,8 @@
 
   .cell {
     min-width: 40px;
+    overflow: hidden;
+    word-wrap: break-word;
     padding: 5px;
     width: $cell-width;
     height: 100%;
